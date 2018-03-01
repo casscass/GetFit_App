@@ -15,7 +15,7 @@ module GetFit
     end
 
     def intro
-        puts Rainbow("Below are the activities we have").mediumaquamarin.bright.underline
+        puts Rainbow("Below are the activities we have").dodgerblue.bright.underline
     end
 
     def start_table    
