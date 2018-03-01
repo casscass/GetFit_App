@@ -4,20 +4,29 @@ module GetFit
     module_function
 
     def welcome
-        puts "Welcome to Coder Academy Get Fit App" + "\n" + " Below are the activities we have"
+        puts "Welcome to Coder Academy Get Fit App" 
     end
-       
+
     def quotes #this is a method
-        quotes = ["Nevermind the Syntx error, have some choc", "Keep calm and code on", "unexpected keyword_end"]
+        quotes = ["Nevermind the Syntx have some choc", "Keep calm and code on", "something funny"]
     end
+
+    def intro
+        "Below are the activities we have"
+    end
+
 end
+
 
 GetFit.welcome
 
-#gets quote from quote.rb file + gest random quote
+# calls picker in QuotePicker
 QuotePicker.picker GetFit.quotes
 
-        # existing_activity {'Activity' => 'yoga', 'Day' => 'Thurs', 'Time' => '1pm' }{'Activity' => 'boxing', 'Day' => 'Mon', 'Time' => '1pm'}
+GetFit.intro
+
+
+    # existing_activity {'Activity' => 'yoga', 'Day' => 'Thurs', 'Time' => '1pm' }{'Activity' => 'boxing', 'Day' => 'Mon', 'Time' => '1pm'}
      
     # end          
         # puts existing_activity
