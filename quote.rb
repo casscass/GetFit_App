@@ -1,7 +1,10 @@
-module QuotePicker 
+module Quote 
+    require 'rainbow'
     module_function
-    def picker quotes
+    def quote 
+        quotes = [ Rainbow("Never mind the Syntx have some choc").red, Rainbow("Keep calm and code on").blue, Rainbow("something funny").yellow]
         puts quotes[rand(0..2)]
-        #puts rand "#{quote.sample}"
     end
 end
+
+

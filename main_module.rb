@@ -3,24 +3,18 @@ require 'rainbow'
 require_relative "start_table"
 require_relative "present_newtable"
 require_relative "asking_input"
+require_relative 'welcome'
+require_relative 'intro'
 
 
 module GetFit
     module_function
 
-    def welcome  
-        puts Rainbow("Welcome to Coder Academy Get Fit App").dodgerblue.bright.underline
-    end
+    Welcome.welcome
 
-    #QuotePicker.picker
+    Quote.quote
 
-    def quotes #this is a method
-        quotes = [ Rainbow("Never mind the Syntx have some choc").red, "Keep calm and code on", "something funny"]
-    end
-
-    def intro
-        puts Rainbow("Below are the activities we have").dodgerblue.bright.underline
-    end
+    Intro.intro
 
     Asking_Input.asking_input
 
