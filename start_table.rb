@@ -1,7 +1,7 @@
-module StartTable
+module ExistingTable
     require 'terminal-table'
     module_function
-    def start_table
+    def start_exiting_table
         rows = []
         rows << ['meditation', 'Tuesday', '1.30PM']
         rows << :separator
@@ -21,4 +21,3 @@ module StartTable
     end
 end
 
-StartTable.start_table

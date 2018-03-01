@@ -1,8 +1,8 @@
-module StartTable
+module StartNewTable
     require 'terminal-table'
     require_relative 'activities'
     module_function
-    def start_table
+    def start_new_table
         rows = []
         rows << ['meditation', 'Tuesday', '1.30PM']
         rows << :separator
@@ -18,9 +18,8 @@ module StartTable
         rows << :separator
         rows << NewActivity.add_activities
         table = Terminal::Table.new :title => "Time Table", :headings => ['Activity', 'Date', 'Time'], :rows => rows 
-        table.style = {:width => 50, :padding_left => 3, :border_x => "=", :border_i => "*"}
+        table.style = {:width => 30, :padding_left => 3, :border_x => "=", :border_i => "*"}
         puts table
     end
 end
 
-StartTable.start_table

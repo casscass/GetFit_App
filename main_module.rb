@@ -1,6 +1,7 @@
 require_relative "quote"
 require 'rainbow'
 require_relative "start_table"
+require_relative "present_newtable"
 
 
 module GetFit
@@ -18,8 +19,8 @@ module GetFit
         puts Rainbow("Below are the activities we have").dodgerblue.bright.underline
     end
 
-    def start_table    
-    end
+    #def start_table    
+    #end
 
     def add_activity
         #puts "would you like to add an activity? (yes, no)"
@@ -29,7 +30,7 @@ module GetFit
             #new_hash = gets.chomp
             #new_hash.include (0,1,2)  existing_activity
             #else
-                puts "OK :)"
+                #puts "OK :)"
             #end
     end
      # chooseYN
@@ -41,7 +42,10 @@ QuotePicker.picker GetFit.quotes
 
 GetFit.intro
 
-GetFit.start_table
+#GetFit.start_table
+ExistingTable.start_exiting_table
+StartNewTable.start_new_table
+
 
 
    
