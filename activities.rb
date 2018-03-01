@@ -1,4 +1,5 @@
 module NewActivity
+    require 'rainbow'
     module_function
 
     def add_activities

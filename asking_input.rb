@@ -1,7 +1,7 @@
 require_relative 'start_table'
 require_relative 'present_newtable'
 
-module Asking_Input
+module User_Input
     module_function
     def asking_input
         puts "would you like to add an activity? (yes, no)"
