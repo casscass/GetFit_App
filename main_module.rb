@@ -1,10 +1,13 @@
 require_relative "quote"
+require 'rainbow'
+require_relative "start_table"
+
 
 module GetFit
     module_function
 
-    def welcome
-        puts "Welcome to Coder Academy Get Fit App" 
+    def welcome  
+        puts Rainbow("Welcome to Coder Academy Get Fit App").dodgerblue.bright.underline
     end
 
     def quotes #this is a method
@@ -12,12 +15,25 @@ module GetFit
     end
 
     def intro
-        "Below are the activities we have"
+        puts Rainbow("Below are the activities we have").mediumaquamarin.bright.underline
     end
 
+    def start_table    
+    end
+
+    def add_activity
+        #puts "would you like to add an activity? (yes, no)"
+        #choose = gets.chomp
+            #if choose = "yes" then
+            #puts  "Please enter your (activity name, day, time)"
+            #new_hash = gets.chomp
+            #new_hash.include (0,1,2)  existing_activity
+            #else
+                puts "OK :)"
+            #end
+    end
+     # chooseYN
 end
-
-
 GetFit.welcome
 
 # calls picker in QuotePicker
@@ -25,8 +41,10 @@ QuotePicker.picker GetFit.quotes
 
 GetFit.intro
 
+GetFit.start_table
 
-    # existing_activity {'Activity' => 'yoga', 'Day' => 'Thurs', 'Time' => '1pm' }{'Activity' => 'boxing', 'Day' => 'Mon', 'Time' => '1pm'}
+
+   
      
     # end          
         # puts existing_activity
@@ -42,17 +60,7 @@ GetFit.intro
       
     # def chooseYN
        # yes no
-       # puts "would you like to add an activity? (yes, no)"
-
-       # choose = gets.chomp
-            # if choose = "yes" then
-            # puts  "Please enter your (activity name, day, time)"
-            # new_hash = gets.chomp
-            # new_hash.include (0,1,2)  existing_activity
-            # else
-                # puts "OK :)"
-     # end
-     # chooseYN
+       
         # end    
     
 
