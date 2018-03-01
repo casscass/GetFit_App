@@ -1,4 +1,4 @@
-#require_relative "quote"
+require_relative "quote"
 
 module GetFit
     module_function
@@ -12,20 +12,10 @@ module GetFit
     end
 end
 
-puts GetFit.welcome
-#puts GetFit.quote
+GetFit.welcome
 
-    # TO DO MOVE TO QUOTE PAGE 
-    module QuotePicker 
-        module_function
-        def picker quotes
-            puts quotes[rand(0..2)]
-         #puts rand "#{quote.sample}"
-        end
-   
-    end
-        
-    QuotePicker.picker GetFit.quotes
+#gets quote from quote.rb file + gest random quote
+QuotePicker.picker GetFit.quotes
 
         # existing_activity {'Activity' => 'yoga', 'Day' => 'Thurs', 'Time' => '1pm' }{'Activity' => 'boxing', 'Day' => 'Mon', 'Time' => '1pm'}
      

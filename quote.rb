@@ -1,11 +1,7 @@
-module Quote
-    QUOTE_COMMAND = "quote"
-    
+module QuotePicker 
     module_function
-    def make quote
-        puts "quote 1...10"
-        deposit = gets.chomp.to_f
-        puts "Your quote is #{quote + 1}"
-        quote
+    def picker quotes
+        puts quotes[rand(0..2)]
+        #puts rand "#{quote.sample}"
     end
 end
