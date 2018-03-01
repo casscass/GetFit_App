@@ -12,7 +12,7 @@ module GetFit
     end
 
     def quotes #this is a method
-        quotes = ["Nevermind the Syntx have some choc", "Keep calm and code on", "something funny"]
+        quotes = [ Rainbow("Never mind the Syntx have some choc").red, "Keep calm and code on", "something funny"]
     end
 
     def intro
@@ -23,17 +23,15 @@ module GetFit
     #end
 
     def add_activity
-        #puts "would you like to add an activity? (yes, no)"
-        #choose = gets.chomp
-            #if choose = "yes" then
-            #puts  "Please enter your (activity name, day, time)"
-            #new_hash = gets.chomp
-            #new_hash.include (0,1,2)  existing_activity
-            #else
-                #puts "OK :)"
-            #end
+        puts "would you like to add an activity? (yes, no)"
+        choose = gets.chomp
+            if choose = "yes" then
+                StartNewTable.start_new_table
+            else
+                puts "OK :)"
+            end
     end
-     # chooseYN
+  
 end
 GetFit.welcome
 
@@ -44,7 +42,7 @@ GetFit.intro
 
 #GetFit.start_table
 ExistingTable.start_exiting_table
-StartNewTable.start_new_table
+#StartNewTable.start_new_table
 
 
 
