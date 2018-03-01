@@ -6,7 +6,7 @@ module GetFit
     end
 
     def quotes #this is a method
-        quotes = [ Rainbow("Never").violet, Rainbow("mind the Syntx have some choc").coral, Rainbow("Keep calm and code on").fuchsia, "something funny"]
+        quotes = [ Rainbow("Never").violet, + Rainbow("mind the Syntx have some choc").coral, Rainbow("Keep calm and code on").fuchsia, "something funny"]
     end
 
     def intro
