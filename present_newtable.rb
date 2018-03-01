@@ -18,7 +18,7 @@ module StartNewTable
         rows << :separator
         rows << NewActivity.add_activities
         table = Terminal::Table.new :title => "Time Table", :headings => ['Activity', 'Date', 'Time'], :rows => rows 
-        table.style = {:width => 30, :padding_left => 3, :border_x => "=", :border_i => "*"}
+        table.style = {:width => 100, :padding_left => 3, :border_x => "=", :border_i => "*"}
         puts table
     end
 end
