@@ -1,7 +1,7 @@
 module ExistingTable
     require 'terminal-table'
     module_function
-    def start_exiting_table
+    def start_existing_table
         rows = []
         rows << ['meditation', 'Tuesday', '1.30PM']
         rows << :separator

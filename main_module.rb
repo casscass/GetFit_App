@@ -11,7 +11,7 @@ module GetFit
     module_function
 
     Welcome.welcome
-
+    
     Quote.quote
 
     Intro.intro
@@ -19,3 +19,4 @@ module GetFit
     Asking_Input.asking_input
 
 end
+
