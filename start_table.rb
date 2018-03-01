@@ -1,5 +1,6 @@
 module ExistingTable
     require 'terminal-table'
+    require 'rainbow'
     module_function
     def start_existing_table
         rows = []
@@ -15,7 +16,7 @@ module ExistingTable
         rows << :separator
         rows << ['swimming', 'Wedesday', '3PM']
         
-        table = Terminal::Table.new :title => "Time Table", :headings => ['Activity', 'Date', 'Time'], :rows => rows 
+        table = Terminal::Table.new :title => Rainbow("Time Table").lime, :headings => [Rainbow('Activity').greenyellow, Rainbow('Date').greenyellow, Rainbow('Time').greenyellow], :rows => rows 
         table.style = {:width => 100, :padding_left => 3, :border_x => "=", :border_i => "x"}
         puts table
     end

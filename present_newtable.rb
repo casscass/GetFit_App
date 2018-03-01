@@ -1,6 +1,7 @@
 module StartNewTable
     require 'terminal-table'
     require_relative 'activities'
+    require 'rainbow'
     module_function
     def start_new_table
         rows = []
@@ -18,6 +19,7 @@ module StartNewTable
         rows << :separator
         rows << NewActivity.add_activities
         table = Terminal::Table.new :title => "Updated Time Table", :headings => ['Activity', 'Date', 'Time'], :rows => rows 
+
         table.style = {:width => 100, :padding_left => 3, :border_x => "=", :border_i => "*"}
         puts table
     end
